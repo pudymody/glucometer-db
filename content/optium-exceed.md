@@ -1,7 +1,7 @@
 +++
 title= "Optium Exceed"
 companies= "Abbott"
-images= ["optium-xceed0.jpg", "optium-xceed1.jpg", "optium-xceed-stripes.jpg"]
+images= ["optium-xceed0.jpg", "optium-xceed1.jpg", "optium-xceed-strips.jpg"]
 manual="optium-xceed.pdf"
 +++
 

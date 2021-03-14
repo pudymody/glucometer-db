@@ -1,7 +1,7 @@
 +++
 title= "Glucometer GX"
 companies= "Bayer"
-images= ["glucometer-gx0.jpg", "glucometer-gx1.jpg", "glucometer-gx3.jpg", "glucometer-gx2.jpg", "glucometer-gx-stripes.jpg"]
+images= ["glucometer-gx0.jpg", "glucometer-gx1.jpg", "glucometer-gx3.jpg", "glucometer-gx2.jpg", "glucometer-gx-strips.jpg"]
 time="50"
 +++
 
