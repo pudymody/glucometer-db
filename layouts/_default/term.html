@@ -1,0 +1,22 @@
+{{ define "main" }}
+<main>
+	<h1>Meters from: {{ .Title }}</h1>
+	<section>
+		 {{ range .Data.Pages }}
+			<article>
+				<a href="{{ .Permalink }}" class="article__image">
+				{{ range first 1 .Params.Images }}
+					<img src="{{ . | absURL }}">
+				{{ end }}
+				</a>
+				<div class="article__content">
+					<h1 class="article__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+					<div>By <a href="/companies/{{ .Params.Companies | urlize }}">{{ .Params.Companies }}</a></div>
+					{{ with .Params.Time }}<span class="article__tag">{{.}}s</span>{{ end }}
+					{{ with .Params.Manual }}<a href="{{ . }}" class="article__tag">User manual</a>{{ end }}
+				</div>
+			</article>
+	{{ end }}
+	</section>
+</main>
+{{ end }}

@@ -1,0 +1,15 @@
+{{ define "main" }}
+	<article class="is-single">
+		<h1 class="article__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+		<div>By <a href="/companies/{{ .Params.Companies | urlize }}">{{ .Params.Companies }}</a></div>
+		{{ with .Params.Time }}<span class="article__tag">{{.}}s</span>{{ end }}
+
+		<div class="article__gallery">
+			{{ range .Params.Images }}
+				<a href="{{ . | absURL }}" class="article__image" target="_blank" rel="noopener noreferrer"><img src="{{ . | absURL }}"></a>
+			{{ end }}
+		</div>
+		<p>{{ .Content }}</p>
+		{{ with .Params.Manual }}<a href="{{ . }}" class="article__tag">Download User manual</a>{{ end }}
+	</article>
+{{ end }}
