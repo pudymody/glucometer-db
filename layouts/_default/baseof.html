@@ -102,7 +102,7 @@
 	<header>
 		<h1><a href="/glucometer-db/">Glucose Meter Database</a></h1>
 		<p>This is an attempt to have a database with information about glucose meters, opinions, reviews, and manuals</p>
-		<p>You can view them all in the <a href="/glucometer-db/">home page</a> or <a href="/companies/">by company</a></p>
+		<p>You can view them all in the <a href="{{ "." | absURL }}">home page</a> or <a href="{{ "companies" | absURL }}">by company</a></p>
 	</header>
 	{{ block "main" . }}{{ end }}
 </body>

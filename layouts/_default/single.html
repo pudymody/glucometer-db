@@ -1,7 +1,7 @@
 {{ define "main" }}
 	<article class="is-single">
 		<h1 class="article__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-		<div>By <a href="/companies/{{ .Params.Companies | urlize }}">{{ .Params.Companies }}</a></div>
+		<div>By <a href="{{ (printf "companies/%s" (.Params.Companies | urlize)) | absURL }}">{{ .Params.Companies }}</a></div>
 		{{ with .Params.Time }}<span class="article__tag">{{.}}s</span>{{ end }}
 
 		<div class="article__gallery">
@@ -10,6 +10,6 @@
 			{{ end }}
 		</div>
 		<p>{{ .Content }}</p>
-		{{ with .Params.Manual }}<a href="{{ . }}" class="article__tag">Download User manual</a>{{ end }}
+		{{ with .Params.Manual }}<a href="{{ . | absURL }}" class="article__tag">Download User manual</a>{{ end }}
 	</article>
 {{ end }}
