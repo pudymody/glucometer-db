@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://pudymody.github.io/glucometer-db/"
 languageCode = "en-us"
 title = "Glucose Meter Database"
 [taxonomies]
